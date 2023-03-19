@@ -14,10 +14,10 @@ if __name__ == "__main__":
     st.title("Game Discounts Dashboard")
 
     # Datasets
-    products = pd.read_csv("data/raw/products.csv", sep=";")
-    prices = pd.read_csv("data/raw/prices.csv")
-    product_stats = pd.read_parquet("data/processed/product_statistics.parquet")
-    neighbors = pd.read_parquet("data/neighbors_5_auto.parquet")
+    products = pd.read_csv("../data/raw/products.csv", sep=";")
+    prices = pd.read_csv("../data/raw/prices.csv")
+    product_stats = pd.read_parquet("../data/processed/product_statistics.parquet")
+    neighbors = pd.read_parquet("../data/neighbors_5_auto.parquet")
 
     # Prepare selector content
     games = products[products["top_category"] == "game"]
