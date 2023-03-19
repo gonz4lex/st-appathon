@@ -14,9 +14,6 @@ if __name__ == "__main__":
     st.title("Game Discounts Dashboard")
 
     # Datasets
-    import os
-
-    print(os.listdir())
     products = pd.read_csv("../data/raw/products.csv", sep=";")
     prices = pd.read_csv("../data/raw/prices.csv")
     product_stats = pd.read_parquet("../data/processed/product_statistics.parquet")
